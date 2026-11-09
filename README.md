@@ -50,7 +50,7 @@ git clone https://github.com/kerpopule/hermes-jev-skills ~/hermes-jev-skills && 
 jev setup-key   # paste your key into the one-time page it opens, then run: jev doctor
 ```
 
-Python 3.9 or newer, no dependencies. Got it as a zip? Unzip it anywhere and run `python3 install.py` from that folder. Or point your agent at this repo and say *"install Hermes Jev Skills"*: it will follow [AGENTS.md](AGENTS.md).
+A current Python 3, no dependencies. Got it as a zip? Unzip it anywhere and run `python3 install.py` from that folder. Or point your agent at this repo and say *"install Hermes Jev Skills"*: it will follow [AGENTS.md](AGENTS.md).
 
 The installer finds Hermes, Claude Code and Codex on the machine and installs for each one it finds. `python3 install.py --check` shows exactly what it would do without changing anything. `--uninstall` reverses it. For Claude Code it also adds four lane subagents (`jev-lane-small` … `jev-lane-escalate`, each with its own model and effort) and a short, delimited lanes block in `~/.claude/CLAUDE.md`, backed up first (`--no-claude-md` leaves that file alone). See [lanes.md](docs/lanes.md).
 
