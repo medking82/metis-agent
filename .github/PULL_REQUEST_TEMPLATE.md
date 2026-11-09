@@ -28,7 +28,7 @@
 <!--
 Two things worth knowing, because they have both bitten this repo:
 
-1. A green run on your machine is not a green run. CI is ubuntu + macOS on 3.13.
+1. A green run on your machine is not a green run. CI is ubuntu + macOS on the latest Python 3.
    Tests that read your keychain, or that patch a function bound as a default argument,
    pass locally and fail there.
 2. Jev answers with a CALIBRATED confidence, and every threshold here reads it as one.
