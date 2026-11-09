@@ -12,8 +12,8 @@ problem. Something that works with a test beside it is enough to start from.
 Two things have bitten every contributor to this repo, including its author, so they are
 worth knowing before rather than after:
 
-**A green run on your machine is not a green run.** CI is Ubuntu and macOS on Python 3.9
-and 3.13. Two kinds of test pass locally and fail there: tests that quietly read your own
+**A green run on your machine is not a green run.** CI is Ubuntu and macOS on Python
+3.13. Two kinds of test pass locally and fail there: tests that quietly read your own
 keychain, and tests that patch a function which was bound as a default argument
 (`def f(..., opener=subprocess.run)` binds at import, so patching the module afterwards
 does nothing — that one had the suite launching real apps on the author's Mac for a week).
