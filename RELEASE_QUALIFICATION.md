@@ -1,6 +1,6 @@
 # Owner release qualification
 
-`codex/sync.py` owns the enrolled updater; `.github/workflows/test.yml` supplies its remote CI proof. The added job uses the same isolated `codex/check.py --full` gate (core, dashboard, release validation). Native Windows checks and upstream jobs remain required. This checkout publishes to `medking82/hermes-jev-skills`.
+`codex/sync.py` owns the enrolled updater; `.github/workflows/test.yml` supplies its remote CI proof. The added job uses the same isolated `codex/check.py --full` gate (core, dashboard, release validation). Native Windows checks and upstream jobs remain required. GitHub API and push evidence identify `medking82/hermes-jev-skills` as a redirect to `medking82/metis-agent` (repository ID `1424351713`): the SOP and standalone checkouts have distinct local origins but share one hosted fork. Their qualification branches are kept distinct. Existing updater repository enrollment and CI provenance must still match the configured origin; this change does not silently re-enroll it.
 
 Full offline wrapper; suite timing only. Reuse disabled because the updater has its own mutable enrollment and delivery state.
 
